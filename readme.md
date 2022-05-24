@@ -141,3 +141,28 @@ Transmit local branch commits to the remote repository branch
 `git pull`
 fetch and merge any commits from the tracking remote branch
 
+## Rewrite history
+___
+Rewriting branches, updating commits and clearing history
+
+`git rebase [branch]`
+apply any commits of current branch ahead of specifed one
+
+`git reset --hard [commit]`
+ clear staging area, rewrite working tree from specified commit
+
+ ## Temporary commits
+ ___
+ Temporarily store modified, tracked files in order to change branches
+
+ `git stash`
+ Save modified and staged changes
+
+ `git stash list`
+ list stack-order of stashed file changes
+
+ `git stash pop`
+ write working from top of stash stack
+
+ `git stash drop`
+ discard the changes from top of shash stack
